@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+ 
+.categories {
+	padding: 50px 0 60px;
+
+  &__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+ 
+  &__list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 16px;
+  }
+ 
+  &__item {
+    flex: 0 0 229px;
+  }
+}
+ 
+.category-card {
+  position: relative;
+  display: block;
+  width: 229px;
+  height: 347px;
+  overflow: hidden;
+  border-radius: $radius-card;
+  transition: transform 0.2s;
+ 
+  // розовый градиент снизу карточки
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba($color-accent, 0) 65%,
+      rgba($color-accent, 0.50) 100%
+    );
+  }
+ 
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  &__name {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+  }
+}

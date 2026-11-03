@@ -1,0 +1,91 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+  padding: 10px 45px;
+  background-color: $color-bg-bar;
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__logo-img {
+    height: auto;
+  }
+
+  &__search {
+    flex: 0 1 942px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+		gap: 10px;
+  }
+
+  &__profile {
+    display: block;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 0 29px;
+  background-color: $color-bg-input;
+  border: 2px solid $color-border-input;
+  border-radius: $radius-pill;
+
+  &__input {
+    flex: 1;
+		padding: 16px 0;
+    min-width: 0;
+    font: inherit;
+    font-size: 24px;
+    color: $color-text;
+    background: none;
+    border: 0;
+    outline: none;
+
+    &::placeholder {
+      color: $color-text;
+      opacity: 0.9;
+    }
+  }
+
+  &__btn {
+    @include flex-center;
+  }
+}
+
+.round-btn {
+  position: relative;
+  border-radius: 50%;
+
+  &__dot {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff2d2d;
+    border: 2px solid $color-accent;
+    border-radius: 50%;
+  }
+
+	&__icon{
+		width: 54px;
+		height: 100%;
+	}
+}
