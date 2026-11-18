@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.stream-card {
+  overflow: hidden;
+  background-color: $color-bg-bar;
+  border-radius: $radius-card;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 24px rgba($color-accent, 0.55);
+  }
+
+  &__preview {
+    position: relative;
+    display: block;
+    height: 266px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 4px 14px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $color-accent;
+    border-radius: 10px;
+  }
+
+  &__views {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 14px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: $color-bg-badge;
+    border-radius: $radius-pill;
+  }
+
+  &__views-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 22px 20px 20px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+
+    &:hover .stream-card__name {
+      text-decoration: underline;
+    }
+  }
+
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 26px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 45px 20px;
+  font-size: 16px;
+  background-color: $color-bg-bar;
+
+  &__contacts {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__socials {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__social-link {
+    display: block;
+  }
+}

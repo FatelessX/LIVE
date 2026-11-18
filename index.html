@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LIVE</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+ <div class="page">
+ 
+    <header class="header">
+      <a class="header__logo" href="/">
+        <img class="header__logo-img" src="img/logo.svg" alt="LIVE">
+      </a>
+ 
+      <form class="search header__search" role="search">
+        <input class="search__input" type="search" placeholder="Search">
+        <button class="search__btn" type="submit">
+          <img class="search__icon" src="img/icons/search.svg" alt="">
+        </button>
+      </form>
+ 
+      <div class="header__actions">
+        <button class="round-btn round-btn--accent" type="button">
+          <img class="round-btn__icon" src="img/icons/bell.svg" alt="">
+        </button>
+        <button class="round-btn round-btn--light" type="button">
+          <img class="round-btn__icon" src="img/icons/mail.svg" alt="">
+        </button>
+        <a class="header__profile" href="/profile">
+          <img class="header__avatar" src="img/avatar.png" alt="Profile">
+        </a>
+      </div>
+    </header>
+ 
+    <aside class="sidebar">
+			<h2 class="sidebar__title">Menu</h2>
+      <nav class="sidebar__section">  
+        <ul class="sidebar__list sidebar__list--menu">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="/" aria-label="Home">
+              <img class="sidebar__icon" src="img/icons/home.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="/videos" aria-label="Videos">
+              <img class="sidebar__icon" src="img/icons/streams.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="/shop" aria-label="Shop">
+              <img class="sidebar__icon" src="img/icons/shop.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+ 
+      <section class="sidebar__section">
+        <h2 class="sidebar__title">Following</h2>
+        <ul class="sidebar__list sidebar__list--following">
+          <li class="sidebar__item">
+            <a class="avatar avatar--online" href="/user/1">
+              <img class="avatar__img" src="img/following-1.jpg" alt="Streamer 1">
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="avatar avatar--offline" href="/user/2">
+              <img class="avatar__img" src="img/following-2.jpg" alt="Streamer 2">
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="avatar avatar--offline" href="/user/3">
+              <img class="avatar__img" src="img/following-3.jpg" alt="Streamer 3">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+ 
+    <main class="main">
+			<div class="container container_main">
+				<section class="categories ">
+        <h1 class="categories__title">Category</h1>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="category-card" href="/category/communicate">
+              <img class="category-card__img" src="img/categories/communicate.jpg" alt="">
+              <span class="category-card__name">Communicate</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="category-card" href="/category/gaming">
+              <img class="category-card__img" src="img/categories/gaming.jpg" alt="">
+              <span class="category-card__name">Gaming</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="category-card" href="/category/music">
+              <img class="category-card__img" src="img/categories/music.jpg" alt="">
+              <span class="category-card__name">Music</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="category-card" href="/category/turnir">
+              <img class="category-card__img" src="img/categories/turnir.jpg" alt="">
+              <span class="category-card__name">Turnir</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="category-card" href="/category/education">
+              <img class="category-card__img" src="img/categories/education.jpg" alt="">
+              <span class="category-card__name">Education</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+			<section class="streams container">
+  <h2 class="visually-hidden">Live streams</h2>
+  <ul class="streams__list">
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/1">
+          <img class="stream-card__img" src="img/streams/stream-1.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            10.9k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/1">90 Followers and a DRAW</a></h3>
+          <a class="stream-card__author" href="/user/1">
+            <img class="stream-card__avatar" src="img/streams/author-1.jpg" alt="">
+            <span class="stream-card__name">CustomStreams</span>
+          </a>
+        </div>
+      </article>
+    </li>
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/2">
+          <img class="stream-card__img" src="img/streams/stream-2.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            14.5k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/2">stream for a wond moder</a></h3>
+          <a class="stream-card__author" href="/user/2">
+            <img class="stream-card__avatar" src="img/streams/author-2.jpg" alt="">
+            <span class="stream-card__name">Men1nMoment</span>
+          </a>
+        </div>
+      </article>
+    </li>
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/3">
+          <img class="stream-card__img" src="img/streams/stream-3.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            11.7k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/3">Good morning (* ^ ω ^)</a></h3>
+          <a class="stream-card__author" href="/user/3">
+            <img class="stream-card__avatar" src="img/streams/author-3.jpg" alt="">
+            <span class="stream-card__name">Jast_Riley</span>
+          </a>
+        </div>
+      </article>
+    </li>
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/4">
+          <img class="stream-card__img" src="img/streams/stream-4.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            2.6k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/4">Building a new world!</a></h3>
+          <a class="stream-card__author" href="/user/4">
+            <img class="stream-card__avatar" src="img/streams/author-4.jpg" alt="">
+            <span class="stream-card__name">BEE WAR</span>
+          </a>
+        </div>
+      </article>
+    </li>
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/5">
+          <img class="stream-card__img" src="img/streams/stream-5.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            8.2k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/5">Insomnia again</a></h3>
+          <a class="stream-card__author" href="/user/5">
+            <img class="stream-card__avatar" src="img/streams/author-5.jpg" alt="">
+            <span class="stream-card__name">Senn1n_M0de</span>
+          </a>
+        </div>
+      </article>
+    </li>
+    <li class="streams__item">
+      <article class="stream-card">
+        <a class="stream-card__preview" href="/stream/6">
+          <img class="stream-card__img" src="img/streams/stream-6.jpg" alt="">
+          <span class="stream-card__badge">Live</span>
+          <span class="stream-card__views">
+            <img class="stream-card__views-icon" src="img/icons/eye.svg" alt="">
+            3.7k
+          </span>
+        </a>
+        <div class="stream-card__body">
+          <h3 class="stream-card__title"><a href="/stream/6">✦ THE NEW MODEL!!!! ✦</a></h3>
+          <a class="stream-card__author" href="/user/6">
+            <img class="stream-card__avatar" src="img/streams/author-6.jpg" alt="">
+            <span class="stream-card__name">Your princess</span>
+          </a>
+        </div>
+      </article>
+    </li>
+  </ul>
+</section>
+ 
+<section class="streamers container">
+  <h2 class="streamers__title">Best streamers</h2>
+  <ul class="streamers__list">
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/1"><img class="streamer-card__avatar" src="img/streamers/streamer-1.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/1">Cinrune</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/2"><img class="streamer-card__avatar" src="img/streamers/streamer-2.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/2">Last_night</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/3"><img class="streamer-card__avatar" src="img/streamers/streamer-3.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/3">AuraBeast99</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/4"><img class="streamer-card__avatar" src="img/streamers/streamer-4.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/4">space_runner</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/5"><img class="streamer-card__avatar" src="img/streamers/streamer-5.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/5">Fate hunter</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+    <li class="streamers__item">
+      <article class="streamer-card">
+        <a href="/user/6"><img class="streamer-card__avatar" src="img/streamers/streamer-6.jpg" alt=""></a>
+        <a class="streamer-card__name" href="/user/6">paleFighter</a>
+        <p class="streamer-card__followers">00 Followers</p>
+        <button class="streamer-card__btn" type="button">Follow</button>
+      </article>
+    </li>
+  </ul>
+</section>
+			</div>
+      
+    </main>
+ 
+    <footer class="footer">
+      <ul class="footer__contacts">
+        <li class="footer__contact footer__contact--title">Contact Us</li>
+        <li class="footer__contact">
+          <img class="footer__icon" src="img/icons/mail-small.svg" alt="">
+          <a class="footer__link" href="mailto:LIVEsupport@mail.com">LIVEsupport@mail.com</a>
+        </li>
+        <li class="footer__contact">
+          <img class="footer__icon" src="img/icons/phone.svg" alt="">
+          <a class="footer__link footer__link--plain" href="tel:+99999999999">+9 99 999-99-99</a>
+        </li>
+      </ul>
+ 
+      <ul class="footer__socials">
+        <li class="footer__social">
+          <a class="footer__social-link" href="#" aria-label="Instagram"><img src="img/icons/instagram.svg" alt=""></a>
+        </li>
+        <li class="footer__social">
+          <a class="footer__social-link" href="#" aria-label="Telegram"><img src="img/icons/telegram.svg" alt=""></a>
+        </li>
+        <li class="footer__social">
+          <a class="footer__social-link" href="#" aria-label="Facebook"><img src="img/icons/facebook.svg" alt=""></a>
+        </li>
+      </ul>
+    </footer>
+ 
+  </div>
+
+</body>
+</html>

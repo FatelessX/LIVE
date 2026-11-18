@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.streamer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 12px 20px;
+  text-align: center;
+  background-color: $color-bg-bar;
+  border-radius: $radius-card;
+
+  &__avatar {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__followers {
+    margin: 10px 0 0;
+    font-size: 22px;
+    color: $color-text-muted;
+  }
+
+  &__btn {
+    margin-top: auto;
+    padding: 6px 24px;
+    font-size: 20px;
+    background-color: $color-bg-button;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+}

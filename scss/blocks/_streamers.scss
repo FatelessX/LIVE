@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.streamers {
+  &__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__list {
+    @include reset-list;
+    display: grid;
+    grid-template-columns: repeat(6, 192px);
+    gap: 19px;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}

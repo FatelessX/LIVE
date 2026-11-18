@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+ 
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: auto;
+
+	&_main{
+	display: flex;
+  flex-direction: column;
+  gap: 60px;
+	}
+}

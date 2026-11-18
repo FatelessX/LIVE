@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as *;
+
+.streams {
+  &__list {
+    @include reset-list;
+    display: grid;
+    grid-template-columns: repeat(3, 403px);
+    gap: 19px;
+    justify-content: space-between;
+  }
+}
